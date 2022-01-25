@@ -1,0 +1,317 @@
+{
+    "modelName": "New model (Polyglot)",
+    "dbVendor": "Polyglot",
+    "isLineageEnabled": false,
+    "sources": [],
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e09f9931-79da-11ec-a1cb-2fb6b12b5f84"
+    },
+    "GUID": "012fc8e0-79f5-11ec-a1cb-2fb6b12b5f84",
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "e09fc040-79da-11ec-a1cb-2fb6b12b5f84"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "e09fc041-79da-11ec-a1cb-2fb6b12b5f84"
+    },
+    "decorativeSymbols": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "ea637350-79f4-11ec-a1cb-2fb6b12b5f84": "TestRecord",
+        "ea6436a0-79f4-11ec-a1cb-2fb6b12b5f84": "message",
+        "ea6436a1-79f4-11ec-a1cb-2fb6b12b5f84": "name",
+        "ea6436a2-79f4-11ec-a1cb-2fb6b12b5f84": "kind",
+        "ea6436a3-79f4-11ec-a1cb-2fb6b12b5f84": "hash",
+        "ea645db2-79f4-11ec-a1cb-2fb6b12b5f84": "nullableHash",
+        "ea645db3-79f4-11ec-a1cb-2fb6b12b5f84": "nullableHash",
+        "ea6436a5-79f4-11ec-a1cb-2fb6b12b5f84": "arrayOfLongs",
+        "ea63c170-79f4-11ec-a1cb-2fb6b12b5f84": "Kind",
+        "ea63e880-79f4-11ec-a1cb-2fb6b12b5f84": "MD5",
+        "ea632530-79f4-11ec-a1cb-2fb6b12b5f84": "org.apache.avro.test"
+    },
+    "collections": [
+        {
+            "collectionName": "TestRecord",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "ea632530-79f4-11ec-a1cb-2fb6b12b5f84",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "message",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "ea6436a0-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "ea6436a1-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "type": "string"
+                },
+                {
+                    "name": "kind",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#/definitions/Kind",
+                    "refType": "internal",
+                    "refIdPath": [
+                        "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+                        "ea63e881-79f4-11ec-a1cb-2fb6b12b5f84",
+                        "ea63c170-79f4-11ec-a1cb-2fb6b12b5f84"
+                    ],
+                    "ref": "ea63c170-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "GUID": "ea6436a2-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "type": "reference"
+                },
+                {
+                    "name": "hash",
+                    "code": "",
+                    "isActivated": true,
+                    "$ref": "#/definitions/MD5",
+                    "refType": "internal",
+                    "refIdPath": [
+                        "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+                        "ea63e881-79f4-11ec-a1cb-2fb6b12b5f84",
+                        "ea63e880-79f4-11ec-a1cb-2fb6b12b5f84"
+                    ],
+                    "ref": "ea63e880-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "GUID": "ea6436a3-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "type": "reference"
+                },
+                {
+                    "choice": "oneOf",
+                    "isActivated": true,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "object",
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "nullableHash",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "$ref": "#/definitions/MD5",
+                                    "refType": "internal",
+                                    "refIdPath": [
+                                        "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+                                        "ea63e881-79f4-11ec-a1cb-2fb6b12b5f84",
+                                        "ea63e880-79f4-11ec-a1cb-2fb6b12b5f84"
+                                    ],
+                                    "ref": "ea63e880-79f4-11ec-a1cb-2fb6b12b5f84",
+                                    "GUID": "ea645db2-79f4-11ec-a1cb-2fb6b12b5f84",
+                                    "type": "reference"
+                                }
+                            ],
+                            "GUID": "ea645db0-79f4-11ec-a1cb-2fb6b12b5f84",
+                            "type": "document",
+                            "arrayItem": true,
+                            "subschema": true
+                        },
+                        {
+                            "isActivated": true,
+                            "childType": "object",
+                            "additionalProperties": true,
+                            "properties": [
+                                {
+                                    "name": "nullableHash",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "type": "null",
+                                    "required": true,
+                                    "default": null,
+                                    "primaryKey": false,
+                                    "GUID": "ea645db3-79f4-11ec-a1cb-2fb6b12b5f84"
+                                }
+                            ],
+                            "GUID": "ea645db1-79f4-11ec-a1cb-2fb6b12b5f84",
+                            "type": "document",
+                            "arrayItem": true,
+                            "subschema": true
+                        }
+                    ],
+                    "GUID": "ea6436a4-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "type": "choice"
+                },
+                {
+                    "name": "arrayOfLongs",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "required": true,
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "integer",
+                            "mode": "long",
+                            "primaryKey": false,
+                            "required": true,
+                            "exclusiveMinimum": false,
+                            "exclusiveMaximum": false,
+                            "GUID": "ea645db4-79f4-11ec-a1cb-2fb6b12b5f84",
+                            "type": "numeric",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "GUID": "ea6436a5-79f4-11ec-a1cb-2fb6b12b5f84",
+                    "type": "array"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "ea63e881-79f4-11ec-a1cb-2fb6b12b5f84",
+                "properties": [
+                    {
+                        "name": "Kind",
+                        "code": "",
+                        "isActivated": true,
+                        "childType": "enum",
+                        "primaryKey": false,
+                        "required": true,
+                        "definitionRefs": [
+                            [
+                                "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+                                "ea6436a2-79f4-11ec-a1cb-2fb6b12b5f84"
+                            ]
+                        ],
+                        "GUID": "ea63c170-79f4-11ec-a1cb-2fb6b12b5f84",
+                        "type": "string"
+                    },
+                    {
+                        "name": "MD5",
+                        "code": "",
+                        "isActivated": true,
+                        "childType": "number",
+                        "mode": "fixed",
+                        "primaryKey": false,
+                        "required": true,
+                        "definitionRefs": [
+                            [
+                                "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+                                "ea6436a3-79f4-11ec-a1cb-2fb6b12b5f84"
+                            ],
+                            [
+                                "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+                                "ea6436a4-79f4-11ec-a1cb-2fb6b12b5f84",
+                                "ea645db0-79f4-11ec-a1cb-2fb6b12b5f84",
+                                "ea645db2-79f4-11ec-a1cb-2fb6b12b5f84"
+                            ]
+                        ],
+                        "GUID": "ea63e880-79f4-11ec-a1cb-2fb6b12b5f84",
+                        "type": "numeric"
+                    }
+                ]
+            },
+            "GUID": "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+            "type": "object",
+            "hackoladeMeta": {
+                "restrictExternalReferenceCreation": true,
+                "validationErrors": {}
+            },
+            "$ref": "error"
+        }
+    ],
+    "views": [],
+    "buckets": [
+        {
+            "name": "org.apache.avro.test",
+            "code": "",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "ea632530-79f4-11ec-a1cb-2fb6b12b5f84",
+            "type": "bucket",
+            "collectionIds": [
+                "ea637350-79f4-11ec-a1cb-2fb6b12b5f84"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "show": true
+        }
+    ],
+    "relationships": [],
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "appTarget": "Polyglot",
+    "lastModifTS": "2022-01-20T13:29:36.139Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "5.4.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "ea637350-79f4-11ec-a1cb-2fb6b12b5f84",
+                        "x": 90,
+                        "y": 90,
+                        "width": 294,
+                        "height": 227,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "ea632530-79f4-11ec-a1cb-2fb6b12b5f84"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

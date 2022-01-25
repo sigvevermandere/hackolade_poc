@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "TestRecord",
+    "additionalProperties": true,
+    "properties": {
+        "message": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "kind": {
+            "$ref": "#/definitions/Kind"
+        },
+        "hash": {
+            "$ref": "#/definitions/MD5"
+        },
+        "arrayOfLongs": {
+            "type": "array",
+            "items": {
+                "type": "number"
+            }
+        }
+    },
+    "definitions": {
+        "Kind": {
+            "type": "string"
+        },
+        "MD5": {
+            "type": "number"
+        }
+    },
+    "$ref": "error",
+    "oneOf": [
+        {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "nullableHash": {
+                    "$ref": "#/definitions/MD5"
+                }
+            }
+        },
+        {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "nullableHash": {
+                    "type": "null",
+                    "default": null
+                }
+            }
+        }
+    ],
+    "required": [
+        "message",
+        "name",
+        "arrayOfLongs"
+    ]
+}

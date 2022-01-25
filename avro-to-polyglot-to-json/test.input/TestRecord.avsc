@@ -1,0 +1,38 @@
+{
+  "type" : "record",
+  "name" : "TestRecord",
+  "namespace" : "org.apache.avro.test",
+  "fields" : [ {
+    "name" : "name",
+    "type" : {
+      "type" : "string",
+      "order" : "ignore"
+    }
+  }, {
+    "name" : "kind",
+    "type" : {
+      "type" : "enum",
+      "name" : "Kind",
+      "symbols" : [ "FOO", "BAR", "BAZ" ],
+      "order" : "descending",
+      "aliases" : [ "org.foo.KindOf" ]
+    }
+  }, {
+    "name" : "hash",
+    "type" : {
+      "type" : "fixed",
+      "name" : "MD5",
+      "size" : 16
+    }
+  }, {
+    "name" : "nullableHash",
+    "type" : [ "MD5", "null" ],
+    "aliases" : [ "hash" ]
+  }, {
+    "name" : "arrayOfLongs",
+    "type" : {
+      "type" : "array",
+      "items" : "long"
+    }
+  } ]
+}

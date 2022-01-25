@@ -1,0 +1,98 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "tml.tf_msm",
+    "properties": {
+        "_hoodie_commit_time": {
+            "type": "string"
+        },
+        "_hoodie_commit_seqno": {
+            "type": "string"
+        },
+        "_hoodie_record_key": {
+            "type": "string"
+        },
+        "_hoodie_partition_path": {
+            "type": "string"
+        },
+        "_hoodie_file_name": {
+            "type": "string"
+        },
+        "instance_id": {
+            "type": "number"
+        },
+        "segment_id": {
+            "type": "number"
+        },
+        "date": {
+            "type": "number"
+        },
+        "interval": {
+            "type": "string"
+        },
+        "uptime": {
+            "type": "number"
+        },
+        "timezone": {
+            "type": "string"
+        },
+        "pedestrian": {
+            "type": "number"
+        },
+        "bike": {
+            "type": "number"
+        },
+        "car": {
+            "type": "number"
+        },
+        "heavy": {
+            "type": "number"
+        },
+        "pedestrian_lft": {
+            "type": "number"
+        },
+        "bike_lft": {
+            "type": "number"
+        },
+        "car_lft": {
+            "type": "number"
+        },
+        "heavy_lft": {
+            "type": "number"
+        },
+        "pedestrian_rgt": {
+            "type": "number"
+        },
+        "bike_rgt": {
+            "type": "number"
+        },
+        "car_rgt": {
+            "type": "number"
+        },
+        "heavy_rgt": {
+            "type": "number"
+        },
+        "direction": {
+            "type": "number"
+        },
+        "car_speed_hist_0to70plus": {
+            "type": "object",
+            "properties": {
+                "array": {
+                    "type": "number"
+                }
+            }
+        },
+        "car_speed_hist_0to120plus": {
+            "type": "object",
+            "properties": {
+                "array": {
+                    "type": "number"
+                }
+            }
+        },
+        "v85": {
+            "type": "number"
+        }
+    }
+}

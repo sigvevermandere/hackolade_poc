@@ -1,0 +1,1106 @@
+{
+    "modelName": "tml.tf_msm.polyglot",
+    "dbVendor": "Polyglot",
+    "isLineageEnabled": false,
+    "sources": [],
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "4ed0e9f1-7d2c-11ec-a653-3b80df117404"
+    },
+    "GUID": "fa195540-7d2c-11ec-a653-3b80df117404",
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "4ed0e9f2-7d2c-11ec-a653-3b80df117404"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "4ed0e9f3-7d2c-11ec-a653-3b80df117404"
+    },
+    "decorativeSymbols": [],
+    "dbVersion": "2019-09",
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "6f34ff60-7d2c-11ec-a653-3b80df117404": "tml.tf_msm.datasource",
+        "6f1876ba-7d2c-11ec-a653-3b80df117404": "title",
+        "6f1876bb-7d2c-11ec-a653-3b80df117404": "type",
+        "6f1876b4-7d2c-11ec-a653-3b80df117404": "properties",
+        "6f1876b5-7d2c-11ec-a653-3b80df117404": "report",
+        "6f1876b8-7d2c-11ec-a653-3b80df117404": "type",
+        "6f1876b6-7d2c-11ec-a653-3b80df117404": "items",
+        "6f1876b7-7d2c-11ec-a653-3b80df117404": "$ref",
+        "6f1876b9-7d2c-11ec-a653-3b80df117404": "required",
+        "6f182890-7d2c-11ec-a653-3b80df117404": "$defs",
+        "6f184fa0-7d2c-11ec-a653-3b80df117404": "reportItem",
+        "6f1876b3-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fa1-7d2c-11ec-a653-3b80df117404": "properties",
+        "6f184fc1-7d2c-11ec-a653-3b80df117404": "instance_id",
+        "6f184fc2-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fcc-7d2c-11ec-a653-3b80df117404": "segment_id",
+        "6f184fcd-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fb6-7d2c-11ec-a653-3b80df117404": "date",
+        "6f184fb8-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fb7-7d2c-11ec-a653-3b80df117404": "format",
+        "6f184fc3-7d2c-11ec-a653-3b80df117404": "interval",
+        "6f184fc5-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fc4-7d2c-11ec-a653-3b80df117404": "enum",
+        "6f184fd0-7d2c-11ec-a653-3b80df117404": "uptime",
+        "6f184fd1-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fce-7d2c-11ec-a653-3b80df117404": "timezone",
+        "6f184fcf-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fc6-7d2c-11ec-a653-3b80df117404": "pedestrian",
+        "6f184fc7-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fa2-7d2c-11ec-a653-3b80df117404": "bike",
+        "6f184fa3-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fa8-7d2c-11ec-a653-3b80df117404": "car",
+        "6f184fa9-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fbb-7d2c-11ec-a653-3b80df117404": "heavy",
+        "6f184fbc-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fc8-7d2c-11ec-a653-3b80df117404": "pedestrian_lft",
+        "6f184fc9-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fa4-7d2c-11ec-a653-3b80df117404": "bike_lft",
+        "6f184fa5-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184faa-7d2c-11ec-a653-3b80df117404": "car_lft",
+        "6f184fab-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fbd-7d2c-11ec-a653-3b80df117404": "heavy_lft",
+        "6f184fbe-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fca-7d2c-11ec-a653-3b80df117404": "pedestrian_rgt",
+        "6f184fcb-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fa6-7d2c-11ec-a653-3b80df117404": "bike_rgt",
+        "6f184fa7-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fac-7d2c-11ec-a653-3b80df117404": "car_rgt",
+        "6f184fad-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fbf-7d2c-11ec-a653-3b80df117404": "heavy_rgt",
+        "6f184fc0-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fb9-7d2c-11ec-a653-3b80df117404": "direction",
+        "6f184fba-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fb2-7d2c-11ec-a653-3b80df117404": "car_speed_hist_0to70plus",
+        "6f184fb5-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fb3-7d2c-11ec-a653-3b80df117404": "items",
+        "6f184fb4-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184fae-7d2c-11ec-a653-3b80df117404": "car_speed_hist_0to120plus",
+        "6f184fb1-7d2c-11ec-a653-3b80df117404": "type",
+        "6f184faf-7d2c-11ec-a653-3b80df117404": "items",
+        "6f184fb0-7d2c-11ec-a653-3b80df117404": "type",
+        "6f1876b0-7d2c-11ec-a653-3b80df117404": "v85",
+        "6f1876b1-7d2c-11ec-a653-3b80df117404": "type",
+        "6f1876b2-7d2c-11ec-a653-3b80df117404": "required",
+        "6f34d850-7d2c-11ec-a653-3b80df117404": "tml.tf_msm.datasource"
+    },
+    "collections": [
+        {
+            "collectionName": "tml.tf_msm.datasource",
+            "code": "",
+            "isActivated": true,
+            "bucketId": "6f34d850-7d2c-11ec-a653-3b80df117404",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "name": "title",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "examples": [
+                        "Telraam schema"
+                    ],
+                    "properties": [],
+                    "GUID": "6f1876ba-7d2c-11ec-a653-3b80df117404",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "examples": [
+                        "object"
+                    ],
+                    "properties": [],
+                    "GUID": "6f1876bb-7d2c-11ec-a653-3b80df117404",
+                    "type": "string"
+                },
+                {
+                    "name": "properties",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "object",
+                    "required": true,
+                    "primaryKey": false,
+                    "additionalProperties": false,
+                    "properties": [
+                        {
+                            "name": "report",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "object",
+                            "required": true,
+                            "primaryKey": false,
+                            "additionalProperties": false,
+                            "properties": [
+                                {
+                                    "name": "type",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "examples": [
+                                        "array"
+                                    ],
+                                    "properties": [],
+                                    "GUID": "6f1876b8-7d2c-11ec-a653-3b80df117404",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "items",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "object",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "additionalProperties": false,
+                                    "properties": [
+                                        {
+                                            "name": "$ref",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "varchar",
+                                            "mode": "string",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "examples": [
+                                                "#/$defs/reportItem"
+                                            ],
+                                            "properties": [],
+                                            "GUID": "6f1876b7-7d2c-11ec-a653-3b80df117404",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "GUID": "6f1876b6-7d2c-11ec-a653-3b80df117404",
+                                    "type": "document"
+                                }
+                            ],
+                            "GUID": "6f1876b5-7d2c-11ec-a653-3b80df117404",
+                            "type": "document"
+                        }
+                    ],
+                    "GUID": "6f1876b4-7d2c-11ec-a653-3b80df117404",
+                    "type": "document"
+                },
+                {
+                    "name": "required",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "array",
+                    "required": true,
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "varchar",
+                            "mode": "string",
+                            "properties": [],
+                            "GUID": "6f35e9c0-7d2c-11ec-a653-3b80df117404",
+                            "type": "string",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "GUID": "6f1876b9-7d2c-11ec-a653-3b80df117404",
+                    "type": "array"
+                },
+                {
+                    "name": "$defs",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "object",
+                    "required": true,
+                    "primaryKey": false,
+                    "additionalProperties": false,
+                    "properties": [
+                        {
+                            "name": "reportItem",
+                            "code": "",
+                            "isActivated": true,
+                            "childType": "object",
+                            "required": true,
+                            "primaryKey": false,
+                            "additionalProperties": false,
+                            "properties": [
+                                {
+                                    "name": "type",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "examples": [
+                                        "object"
+                                    ],
+                                    "properties": [],
+                                    "GUID": "6f1876b3-7d2c-11ec-a653-3b80df117404",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "properties",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "object",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "additionalProperties": false,
+                                    "properties": [
+                                        {
+                                            "name": "instance_id",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "integer"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fc2-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fc1-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "segment_id",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "integer"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fcd-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fcc-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "date",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "string"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fb8-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "format",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "date-time"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fb7-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fb6-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "interval",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "string"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fc5-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "enum",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "array",
+                                                    "required": true,
+                                                    "primaryKey": false,
+                                                    "properties": [
+                                                        {
+                                                            "isActivated": true,
+                                                            "childType": "varchar",
+                                                            "mode": "string",
+                                                            "properties": [],
+                                                            "GUID": "6f3637e0-7d2c-11ec-a653-3b80df117404",
+                                                            "type": "string",
+                                                            "hackoladeMeta": {},
+                                                            "arrayItem": true,
+                                                            "arrayParentType": "array"
+                                                        }
+                                                    ],
+                                                    "GUID": "6f184fc4-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "array"
+                                                }
+                                            ],
+                                            "GUID": "6f184fc3-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "uptime",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fd1-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fd0-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "timezone",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "string"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fcf-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fce-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "pedestrian",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fc7-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fc6-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "bike",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fa3-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fa2-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "car",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fa9-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fa8-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "heavy",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fbc-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fbb-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "pedestrian_lft",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fc9-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fc8-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "bike_lft",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fa5-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fa4-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "car_lft",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fab-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184faa-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "heavy_lft",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fbe-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fbd-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "pedestrian_rgt",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fcb-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fca-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "bike_rgt",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fa7-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fa6-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "car_rgt",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fad-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fac-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "heavy_rgt",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fc0-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fbf-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "direction",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "integer"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fba-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f184fb9-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "car_speed_hist_0to70plus",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "array"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fb5-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "items",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "object",
+                                                    "required": true,
+                                                    "primaryKey": false,
+                                                    "additionalProperties": false,
+                                                    "properties": [
+                                                        {
+                                                            "name": "type",
+                                                            "code": "",
+                                                            "isActivated": true,
+                                                            "childType": "varchar",
+                                                            "mode": "string",
+                                                            "primaryKey": false,
+                                                            "required": true,
+                                                            "examples": [
+                                                                "number"
+                                                            ],
+                                                            "properties": [],
+                                                            "GUID": "6f184fb4-7d2c-11ec-a653-3b80df117404",
+                                                            "type": "string"
+                                                        }
+                                                    ],
+                                                    "GUID": "6f184fb3-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "document"
+                                                }
+                                            ],
+                                            "GUID": "6f184fb2-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "car_speed_hist_0to120plus",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "array"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f184fb1-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "name": "items",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "object",
+                                                    "required": true,
+                                                    "primaryKey": false,
+                                                    "additionalProperties": false,
+                                                    "properties": [
+                                                        {
+                                                            "name": "type",
+                                                            "code": "",
+                                                            "isActivated": true,
+                                                            "childType": "varchar",
+                                                            "mode": "string",
+                                                            "primaryKey": false,
+                                                            "required": true,
+                                                            "examples": [
+                                                                "number"
+                                                            ],
+                                                            "properties": [],
+                                                            "GUID": "6f184fb0-7d2c-11ec-a653-3b80df117404",
+                                                            "type": "string"
+                                                        }
+                                                    ],
+                                                    "GUID": "6f184faf-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "document"
+                                                }
+                                            ],
+                                            "GUID": "6f184fae-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        },
+                                        {
+                                            "name": "v85",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "type",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "varchar",
+                                                    "mode": "string",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "examples": [
+                                                        "number"
+                                                    ],
+                                                    "properties": [],
+                                                    "GUID": "6f1876b1-7d2c-11ec-a653-3b80df117404",
+                                                    "type": "string"
+                                                }
+                                            ],
+                                            "GUID": "6f1876b0-7d2c-11ec-a653-3b80df117404",
+                                            "type": "document"
+                                        }
+                                    ],
+                                    "GUID": "6f184fa1-7d2c-11ec-a653-3b80df117404",
+                                    "type": "document"
+                                },
+                                {
+                                    "name": "required",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "array",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "properties": [
+                                        {
+                                            "isActivated": true,
+                                            "childType": "varchar",
+                                            "mode": "string",
+                                            "properties": [],
+                                            "GUID": "6f368600-7d2c-11ec-a653-3b80df117404",
+                                            "type": "string",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true,
+                                            "arrayParentType": "array"
+                                        }
+                                    ],
+                                    "GUID": "6f1876b2-7d2c-11ec-a653-3b80df117404",
+                                    "type": "array"
+                                }
+                            ],
+                            "GUID": "6f184fa0-7d2c-11ec-a653-3b80df117404",
+                            "type": "document"
+                        }
+                    ],
+                    "GUID": "6f182890-7d2c-11ec-a653-3b80df117404",
+                    "type": "document"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "6f359ba0-7d2c-11ec-a653-3b80df117404",
+                "properties": []
+            },
+            "GUID": "6f34ff60-7d2c-11ec-a653-3b80df117404",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "buckets": [
+        {
+            "name": "tml.tf_msm.datasource",
+            "code": "",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "6f34d850-7d2c-11ec-a653-3b80df117404",
+            "type": "bucket",
+            "collectionIds": [
+                "6f34ff60-7d2c-11ec-a653-3b80df117404"
+            ],
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "show": true
+        }
+    ],
+    "relationships": [],
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "appTarget": "Polyglot",
+    "lastModifTS": "2022-01-24T15:52:15.492Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "5.4.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "6f34ff60-7d2c-11ec-a653-3b80df117404",
+                        "x": 90,
+                        "y": 90,
+                        "width": 340,
+                        "height": 1000,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "6f34d850-7d2c-11ec-a653-3b80df117404"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
