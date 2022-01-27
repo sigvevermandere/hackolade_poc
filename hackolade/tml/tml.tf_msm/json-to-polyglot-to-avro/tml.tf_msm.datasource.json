@@ -1,0 +1,119 @@
+{
+  "title": "Telraam schema",
+  "type": "object",
+  "properties": {
+    "report": {
+      "type": "array",
+      "items": {
+        
+          "type": "object",
+          "properties": {
+            "instance_id": {
+              "type": "integer"
+            },
+            "segment_id": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "interval": {
+              "type": "string",
+              "enum": [
+                "hourly",
+                "daily"
+              ]
+            },
+            "uptime": {
+              "type": "number"
+            },
+            "timezone": {
+              "type": "string"
+            },
+            "pedestrian": {
+              "type": "number"
+            },
+            "bike": {
+              "type": "number"
+            },
+            "car": {
+              "type": "number"
+            },
+            "heavy": {
+              "type": "number"
+            },
+            "pedestrian_lft": {
+              "type": "number"
+            },
+            "bike_lft": {
+              "type": "number"
+            },
+            "car_lft": {
+              "type": "number"
+            },
+            "heavy_lft": {
+              "type": "number"
+            },
+            "pedestrian_rgt": {
+              "type": "number"
+            },
+            "bike_rgt": {
+              "type": "number"
+            },
+            "car_rgt": {
+              "type": "number"
+            },
+            "heavy_rgt": {
+              "type": "number"
+            },
+            "direction": {
+              "type": "integer"
+            },
+            "car_speed_hist_0to70plus": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "car_speed_hist_0to120plus": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "v85": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "segment_id",
+            "date",
+            "interval",
+            "uptime",
+            "timezone",
+            "pedestrian",
+            "bike",
+            "heavy",
+            "car",
+            "pedestrian_lft",
+            "bike_lft",
+            "car_lft",
+            "heavy_lft",
+            "pedestrian_rgt",
+            "bike_rgt",
+            "car_rgt",
+            "heavy_rgt",
+            "direction",
+            "car_speed_hist_0to70plus",
+            "car_speed_hist_0to120plus",
+            "v85"
+          ]
+        }
+      
+    }
+  },
+  "required": [
+    "report"
+  ]
+}

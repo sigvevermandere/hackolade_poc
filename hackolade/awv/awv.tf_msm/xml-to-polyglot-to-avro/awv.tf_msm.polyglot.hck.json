@@ -1,0 +1,499 @@
+{
+    "modelName": "awv.tf_msm.polyglot",
+    "dbVendor": "Polyglot",
+    "isLineageEnabled": false,
+    "sources": [],
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e0520011-7f59-11ec-8b71-fd875b20c5ff"
+    },
+    "GUID": "0e6643d0-7f5a-11ec-8b71-fd875b20c5ff",
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "e0520012-7f59-11ec-8b71-fd875b20c5ff"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "e0520013-7f59-11ec-8b71-fd875b20c5ff"
+    },
+    "decorativeSymbols": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "f105f880-7f59-11ec-8b71-fd875b20c5ff": "miv",
+        "f10694c0-7f59-11ec-8b71-fd875b20c5ff": "schemaVersion",
+        "f106bbd0-7f59-11ec-8b71-fd875b20c5ff": "tijd_publicatie",
+        "f106e2e0-7f59-11ec-8b71-fd875b20c5ff": "tijd_laatste_config_wijziging",
+        "f106e2e1-7f59-11ec-8b71-fd875b20c5ff": "meetpunt",
+        "f106e2e2-7f59-11ec-8b71-fd875b20c5ff": "unieke_id",
+        "f10709f0-7f59-11ec-8b71-fd875b20c5ff": "beschrijvende_id",
+        "f10709f1-7f59-11ec-8b71-fd875b20c5ff": "lve_nr",
+        "f1073100-7f59-11ec-8b71-fd875b20c5ff": "tijd_waarneming",
+        "f1073101-7f59-11ec-8b71-fd875b20c5ff": "tijd_laatst_gewijzigd",
+        "f1073102-7f59-11ec-8b71-fd875b20c5ff": "actueel_publicatie",
+        "f1077f20-7f59-11ec-8b71-fd875b20c5ff": "beschikbaar",
+        "f107a630-7f59-11ec-8b71-fd875b20c5ff": "defect",
+        "f107a631-7f59-11ec-8b71-fd875b20c5ff": "geldig",
+        "f107a632-7f59-11ec-8b71-fd875b20c5ff": "meetdata",
+        "f107cd40-7f59-11ec-8b71-fd875b20c5ff": "klasse_id",
+        "f107cd41-7f59-11ec-8b71-fd875b20c5ff": "verkeersintensiteit",
+        "f107f450-7f59-11ec-8b71-fd875b20c5ff": "voertuigsnelheid_rekenkundig",
+        "f1081b60-7f59-11ec-8b71-fd875b20c5ff": "voertuigsnelheid_harmonisch",
+        "f1081b62-7f59-11ec-8b71-fd875b20c5ff": "rekendata",
+        "f1084270-7f59-11ec-8b71-fd875b20c5ff": "bezettingsgraad",
+        "f1084271-7f59-11ec-8b71-fd875b20c5ff": "beschikbaarheidsgraad",
+        "f1084272-7f59-11ec-8b71-fd875b20c5ff": "onrustigheid",
+        "f10a6550-7f59-11ec-8b71-fd875b20c5ff": "awv.tf_msm.input"
+    },
+    "collections": [
+        {
+            "collectionName": "miv",
+            "code": "",
+            "isActivated": true,
+            "description": "{\n  \"_\": \"Meten-in-Vlaanderen (MIV) minuutwaarden verkeersmetingen.\\r\\n                    - http://opendata.vlaanderen.be/dataset/minuutwaarden-verkeersmetingen-vlaanderen\\r\\n                    - Deze gegevens zijn afkomstig van dubbele meetlussen, hoofdzakelijk op snelwegen in het Vlaams\\r\\n                    gewest.\\r\\n                    - Verantwoordelijken voor deze gegevens zijn het Agentschap Wegen en Verkeer (AWV,\\r\\n                    http://www.wegenenverkeer.be)\\r\\n                    en het Vlaams Verkeerscentrum (VVC, http://www.verkeerscentrum.be).\\r\\n                    - De meetgegevens zijn o.a. aantallen voertuigen en gemiddelde snelheden, opgedeeld in 5\\r\\n                    voertuigklassen, per minuut geaggregeerd.\\r\\n                    - De gegevens worden elke minuut geüpdatet.\\r\\n                    - De configuratiegegevens (locatie, ...) van de meetpunten zijn beschikbaar via\\r\\n                    http://miv.opendata.belfla.be/miv/configuratie/xml\\r\\n                    - De meetgegevens zijn beschikbaar via http://miv.opendata.belfla.be/miv/verkeersdata\\r\\n                    - De gedocumenteerde xsd-schema's bevatten uitleg over de velden en zijn beschikbaar via:\\r\\n                    http://miv.opendata.belfla.be/miv-config.xsd\\r\\n                    http://miv.opendata.belfla.be/miv-verkeersdata.xsd\\r\\n                    - Feedback en suggesties voor verbetering: klantendienst-awv@wegenenverkeer.be, met vermelding van\\r\\n                    referentie OPENDATA.MIV\\r\\n                    - Beschikbaarheid en aansprakelijkheid: zie art. 8 van de licentie.\\r\\n                    Onbeschikbaarheid van de dataset kan gemeld worden aan vtc.meldingen@vlaanderen.be met vermelding\\r\\n                    van referentie OPENDATA.MIV\\r\\n                    - Licentie: Modellicentie Gratis Hergebruik - v1.0\\r\\n                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Meten-in-Vlaanderen (MIV) Loop-based traffic data (1-minute data).\\r\\n                    - http://opendata.vlaanderen.be/dataset/minuutwaarden-verkeersmetingen-vlaanderen\\r\\n                    - The data is provided by the inductive detection loops, mainly on highways in Flanders.\\r\\n                    - The data controllers are Agentschap Wegen en Verkeer (Roads and Traffic Agency,\\r\\n                    http://www.wegenenverkeer.be)\\r\\n                    and Vlaams Verkeerscentrum (the Flemish Traffic Centre, http://www.verkeerscentrum.be).\\r\\n                    - The traffic data contained are p.e. the number of vehicles and the average speeds, divided in 5\\r\\n                    vehicle classes, aggregated per minute.\\r\\n                    - The data is updated every minute.\\r\\n                    - The configuration data (location, ...) of the measurement points is available at\\r\\n                    http://miv.opendata.belfla.be/miv/configuratie/xml\\r\\n                    - The traffic data is available at http://miv.opendata.belfla.be/miv/verkeersdata\\r\\n                    - The xsd-schemes document all data fields and are available at:\\r\\n                    http://miv.opendata.belfla.be/miv-config.xsd\\r\\n                    http://miv.opendata.belfla.be/miv-verkeersdata.xsd\\r\\n                    - Feedback and suggestions for improvement: klantendienst-awv@wegenenverkeer.be, reference:\\r\\n                    OPENDATA.MIV\\r\\n                    - Availability and liability: see art. 8 of the license.\\r\\n                    Unavailability of this dataset can be notified to vtc.meldingen@vlaanderen.be (Dutch only),\\r\\n                    reference: OPENDATA.MIV\\r\\n                    - License: Modellicentie Gratis Hergebruik - v1.0\\r\\n                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+            "bucketId": "f10a6550-7f59-11ec-8b71-fd875b20c5ff",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "name": "schemaVersion",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "varchar",
+                    "mode": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "f10694c0-7f59-11ec-8b71-fd875b20c5ff",
+                    "type": "string"
+                },
+                {
+                    "name": "tijd_publicatie",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "long",
+                    "description": "{\n  \"_\": \"Datum en tijd waarop de XML werd gegenereerd/gepubliceerd.\\r\\n                            http://miv.opendata.belfla.be/miv/verkeersdata\\r\\n                        \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Date and time when the XML was generated/published.\\r\\n                            http://miv.opendata.belfla.be/miv/verkeersdata\\r\\n                        \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                    "primaryKey": false,
+                    "required": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "f106bbd0-7f59-11ec-8b71-fd875b20c5ff",
+                    "type": "numeric"
+                },
+                {
+                    "name": "tijd_laatste_config_wijziging",
+                    "code": "",
+                    "isActivated": true,
+                    "childType": "integer",
+                    "mode": "long",
+                    "description": "{\n  \"_\": \"Datum en tijd waarop het overeenkomstige configuratiebestand van\\r\\n                            de meetpunten laatst werd aangepast.\\r\\n                            http://miv.opendata.belfla.be/miv/configuratie/xml\\r\\n                        \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Date and time of the last change of the configuration file.\\r\\n                            http://miv.opendata.belfla.be/miv/configuratie/xml\\r\\n                        \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                    "primaryKey": false,
+                    "required": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "GUID": "f106e2e0-7f59-11ec-8b71-fd875b20c5ff",
+                    "type": "numeric"
+                },
+                {
+                    "name": "meetpunt",
+                    "code": "",
+                    "isActivated": true,
+                    "description": "{\n  \"_\": \"De gegevens worden per meetpunt doorgegeven onder het element\\r\\n                            \\\"meetpunt\\\".\\r\\n                        \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Data per measurement point under the element \\\"meetpunt\\\".\\r\\n                        \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                    "childType": "array",
+                    "required": true,
+                    "primaryKey": false,
+                    "properties": [
+                        {
+                            "isActivated": true,
+                            "childType": "object",
+                            "required": true,
+                            "primaryKey": false,
+                            "additionalProperties": false,
+                            "properties": [
+                                {
+                                    "name": "unieke_id",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "description": "{\n  \"_\": \"Uniek nummer voor de identificatie van het meetpunt.\\r\\n                                    Verdere gegevens (locatie, etc.) over het meetpunt zijn te vinden in de\\r\\n                                    configuratie.\\r\\n                                    http://miv.opendata.belfla.be/miv/configuratie/xml\\r\\n                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Unique identification number of the measurement point.\\r\\n                                    More data (location, etc.) about the measurement point are found in the\\r\\n                                    configuration:\\r\\n                                    http://miv.opendata.belfla.be/miv/configuratie/xml\\r\\n                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "GUID": "f106e2e2-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "beschrijvende_id",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "varchar",
+                                    "mode": "string",
+                                    "description": "{\n  \"_\": \"Beschrijvende id. (Dit is een intern gebruikte id. Deze\\r\\n                                    gegevens kunnen in de toekomst weggelaten worden.)\\r\\n                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Descriptive id. (Internally used id. May be omitted in\\r\\n                                    the future.)\\r\\n                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "GUID": "f10709f0-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "lve_nr",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "description": "{\n  \"_\": \"Nummer van de LVE (Lokale VerwerkingsEenheid).\\r\\n                                        Een LVE verwerkt de gegevens van een groep meetpunten.\\r\\n                                        (Dit is een intern gebruikt nummer. Deze gegevens kunnen in de toekomst\\r\\n                                        weggelaten worden.)\\r\\n                                    \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Number of the LVE (Local Processing Unit).\\r\\n                                        The LVE processes the data of a group of measurement points\\r\\n                                        (This number is used internally. This data can be omitted in the future.)\\r\\n                                    \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "GUID": "f10709f1-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "tijd_waarneming",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "long",
+                                    "description": "{\n  \"_\": \"Datum en tijd van het begin van de minuut\\r\\n                                                waarop de gegevens betrekking hebben in UTC+1 (wintertijd).\\r\\n                                                Indien de datum meerdere jaren in het verleden ligt, kan dit ook wijzen\\r\\n                                                op herstarte meetapparatuur waarbij de tijd nog niet werd\\r\\n                                                gesynchroniseerd.\\r\\n                                                In dergelijk geval zullen de gegevens wel elke minuut wijzigen en kan\\r\\n                                                aangenomen worden dat de minuut-geaggregeerde gegevens live\\r\\n                                                doorgegeven worden.\\r\\n                                                bv. 13:00:00 is voor de minuut tussen 13:00:00 en 13:00:59\\r\\n                                            \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"\\\"Obervation time\\\".\\r\\n                                                Starting date and time of the minute to which the data correspond,\\r\\n                                                UTC+1.\\r\\n                                                If the date is several years in the past, this can point to a restarted\\r\\n                                                measurement device which hasn't synchronised its time yet.\\r\\n                                                In that case, if the data still changes every minute, it can be assumed\\r\\n                                                that the data is live and current.\\r\\n                                                pe. 13:00:00 contains the minute between 13:00:00 and 13:00:59\\r\\n                                            \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "GUID": "f1073100-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "tijd_laatst_gewijzigd",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "long",
+                                    "description": "{\n  \"_\": \"Datum en tijd van de laatste update van\\r\\n                                                gegevens voor dit meetpunt.\\r\\n                                            \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Date and time of the last update of data for\\r\\n                                                this measurement point.\\r\\n                                            \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "GUID": "f1073101-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "actueel_publicatie",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "enum": [
+                                        0,
+                                        1
+                                    ],
+                                    "GUID": "f1073102-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "beschikbaar",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "enum": [
+                                        0,
+                                        1
+                                    ],
+                                    "GUID": "f1077f20-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "defect",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "enum": [
+                                        0,
+                                        1,
+                                        2
+                                    ],
+                                    "GUID": "f107a630-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "geldig",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "integer",
+                                    "mode": "int",
+                                    "primaryKey": false,
+                                    "required": true,
+                                    "exclusiveMinimum": false,
+                                    "exclusiveMaximum": false,
+                                    "enum": [
+                                        0,
+                                        1,
+                                        2,
+                                        3
+                                    ],
+                                    "GUID": "f107a631-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "numeric"
+                                },
+                                {
+                                    "name": "meetdata",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "array",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "properties": [
+                                        {
+                                            "isActivated": true,
+                                            "childType": "object",
+                                            "required": true,
+                                            "primaryKey": false,
+                                            "additionalProperties": false,
+                                            "properties": [
+                                                {
+                                                    "name": "klasse_id",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "integer",
+                                                    "mode": "int",
+                                                    "description": "{\n  \"_\": \"\\r\\n                                                Voertuigklasse 1 = Deze voertuigklasse was voorzien voertuigen met\\r\\n                                                geschatte lengte tussen 0m en 1,00m.\\r\\n                                                vb. moto's. De sporadische metingen in deze voertuigklasse zijn weinig\\r\\n                                                tot niet betrouwbaar.\\r\\n                                                Deze gegevens worden door AWV en het verkeerscentrum niet meer gebruikt.\\r\\n\\r\\n                                                Voertuigklasse 2 = Personenwagens = voertuigen met geschatte lengte\\r\\n                                                tussen 1,00m en 4,90m\\r\\n\\r\\n                                                Voertuigklasse 3 = Bestelwagens = voertuigen met geschatte lengte tussen\\r\\n                                                4,90m en 6,90m\\r\\n\\r\\n                                                Voertuigklasse 4 = Ongelede vrachtwagens = voertuigen metvgeschatte\\r\\n                                                lengte tussen 6,90m en 12,00m\\r\\n                                                bv.:Vrachtwagen of trekker\\r\\n\\r\\n                                                Voertuigklasse 5 = Gelede vrachtwagens of bussen= voertuigen met\\r\\n                                                geschatte lengte langer dan 12,00m\\r\\n                                                bv.: vrachtwagen+aanhangwagen, trekker+aanhangwagen of bus\\r\\n                                            \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"\\r\\n                                                Vehicle class 1 = This vehcile class was used for vehicles with\\r\\n                                                estimated lenght between 0m and 1,00m.\\r\\n                                                pe. motorbikes. The occasional measurements in thsi vehicle class are\\r\\n                                                unreliable.\\r\\n                                                This data is unused by AWV and the Traffic Center.\\r\\n\\r\\n                                                Vehicle class 2 = Cars = vehicles with an estimated length between 1,00m\\r\\n                                                and 4,90m\\r\\n\\r\\n                                                Vehicle class 3 = Vans = vehicles with an estimated length between 4,90m\\r\\n                                                and 6,90m\\r\\n\\r\\n                                                Vehicle class 4 = Rigid lorries = vehicles with an estimated length\\r\\n                                                between 6,90m and 12,00m\\r\\n                                                bv.:Lorry, or tractor\\r\\n\\r\\n                                                Vehicle class 5 = (Semi-)Trailers or busses= vehicles with an estimated\\r\\n                                                length longer than 12,00m\\r\\n                                                bv.: lorry with trailer, tractor with semi-trailer, or bus\\r\\n                                            \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "exclusiveMinimum": false,
+                                                    "exclusiveMaximum": false,
+                                                    "enum": [
+                                                        1,
+                                                        2,
+                                                        3,
+                                                        4,
+                                                        5
+                                                    ],
+                                                    "GUID": "f107cd40-7f59-11ec-8b71-fd875b20c5ff",
+                                                    "type": "numeric"
+                                                },
+                                                {
+                                                    "name": "verkeersintensiteit",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "integer",
+                                                    "mode": "int",
+                                                    "description": "{\n  \"_\": \"n = aantal voertuigen binnen deze\\r\\n                                                    voertuigklasse.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"n = vehicle count within vehicle\\r\\n                                                    class.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "exclusiveMinimum": false,
+                                                    "exclusiveMaximum": false,
+                                                    "GUID": "f107cd41-7f59-11ec-8b71-fd875b20c5ff",
+                                                    "type": "numeric"
+                                                },
+                                                {
+                                                    "name": "voertuigsnelheid_rekenkundig",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "integer",
+                                                    "mode": "int",
+                                                    "description": "{\n  \"_\": \"Som (vi) / n = rekenkundig gemiddelde\\r\\n                                                    snelheid van de voertuigen binnen deze voertuigklasse\\r\\n                                                    (met vi = individuele snelheid van een voertuig binnen deze\\r\\n                                                    voertuigklasse)\\r\\n                                                    Waarde domein 0 t/m 254 km/h.\\r\\n                                                    Waarde bereik 0..200 km/h\\r\\n                                                    Resolutie 1.\\r\\n                                                    Bijzondere waarden:\\r\\n                                                    - 251: Initiële waarde\\r\\n                                                    - 254: Berekening niet mogelijk\\r\\n                                                    - 252: geen voertuigen binnen deze voertuigklasse gepasseerd.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Sum (vi) / n = arithmetic average speed\\r\\n                                                    of the vehicles in this vehicle class\\r\\n                                                    (with vi = individual speed of a vehicle in this vehicle class)\\r\\n                                                    Value domaing 0 to 254 km/h.\\r\\n                                                    Value range 0..200 km/h\\r\\n                                                    Resolution 1.\\r\\n                                                    Special values:\\r\\n                                                    - 251: Initial value\\r\\n                                                    - 254: Calculation not possible\\r\\n                                                    - 252: no vehicles were counted in this vehicle class.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "exclusiveMinimum": false,
+                                                    "exclusiveMaximum": false,
+                                                    "GUID": "f107f450-7f59-11ec-8b71-fd875b20c5ff",
+                                                    "type": "numeric"
+                                                },
+                                                {
+                                                    "name": "voertuigsnelheid_harmonisch",
+                                                    "code": "",
+                                                    "isActivated": true,
+                                                    "childType": "integer",
+                                                    "mode": "int",
+                                                    "description": "{\n  \"_\": \"n / Som (1/vi) = harmonische gemiddelde\\r\\n                                                    snelheid van de voertuigen binnen deze voertuigklasse\\r\\n                                                    (met vi = individuele snelheid van een voertuig binnen deze\\r\\n                                                    voertuigklasse)\\r\\n                                                    Bijzondere waarden:\\r\\n                                                    - 251: Initiële waarde\\r\\n                                                    - 254: Berekening niet mogelijk\\r\\n                                                    - 252: geen voertuigen binnen deze voertuigklasse gepasseerd.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"n / Sum (1/vi) = harmonic average speed\\r\\n                                                    of the vehicles in this vehicle class\\r\\n                                                    (with vi = individual speed of a vehicle in this vehicle class)\\r\\n                                                    Special values:\\r\\n                                                    - 251: Initial value\\r\\n                                                    - 254: Calculation not possible\\r\\n                                                    - 252: no vehicles were counted in this vehicle class.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                                    "primaryKey": false,
+                                                    "required": true,
+                                                    "exclusiveMinimum": false,
+                                                    "exclusiveMaximum": false,
+                                                    "GUID": "f1081b60-7f59-11ec-8b71-fd875b20c5ff",
+                                                    "type": "numeric"
+                                                }
+                                            ],
+                                            "GUID": "f1081b61-7f59-11ec-8b71-fd875b20c5ff",
+                                            "type": "document",
+                                            "hackoladeMeta": {},
+                                            "arrayItem": true,
+                                            "arrayParentType": "array"
+                                        }
+                                    ],
+                                    "GUID": "f107a632-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "array"
+                                },
+                                {
+                                    "name": "rekendata",
+                                    "code": "",
+                                    "isActivated": true,
+                                    "childType": "object",
+                                    "required": true,
+                                    "primaryKey": false,
+                                    "additionalProperties": false,
+                                    "properties": [
+                                        {
+                                            "name": "bezettingsgraad",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "integer",
+                                            "mode": "int",
+                                            "description": "{\n  \"_\": \"Bezettingsgraad = Puntbedekkingstijd (in\\r\\n                                                    10ms) / 60s (in sec)\\r\\n                                                    Puntbedekkingstijd: De tijdsduur waarin, gedurende een\\r\\n                                                    beschouwingsperiode, een fictief punt van een detector door\\r\\n                                                    voertuigen\\r\\n                                                    bedekt is geweest.\\r\\n                                                    De puntbedekkingstijd is uitgedrukt in eenheden van 10 milliseconden\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Occupancy = Pointcoverage (in 10ms) /\\r\\n                                                    60s (in sec)\\r\\n                                                    Pointcoverage: Time during which a fictional point of the detector\\r\\n                                                    was covered by a vehicle.\\r\\n                                                    The pointcoverage is expressed in units of 10 milliseconds\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "exclusiveMinimum": false,
+                                            "exclusiveMaximum": false,
+                                            "GUID": "f1084270-7f59-11ec-8b71-fd875b20c5ff",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "beschikbaarheidsgraad",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "integer",
+                                            "mode": "int",
+                                            "description": "{\n  \"_\": \"beschikbaarheidsgraad = ((60s -\\r\\n                                                    onbetrouwbaarheidsduur) / 60s) * 100\\r\\n                                                    Onbetrouwbaarheidsduur = de tijdsduur waarin, gedurende een\\r\\n                                                    beschouwingsperiode, een detector niet in staat is geweest\\r\\n                                                    om op betrouwbare wijze voertuigpassages waar te nemen.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"degree of availability = ((60s -\\r\\n                                                    unavailability) / 60s) * 100\\r\\n                                                    Unavailability = Time during which a detector was unable to reliably\\r\\n                                                    detect passing vehicles.\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "exclusiveMinimum": false,
+                                            "exclusiveMaximum": false,
+                                            "GUID": "f1084271-7f59-11ec-8b71-fd875b20c5ff",
+                                            "type": "numeric"
+                                        },
+                                        {
+                                            "name": "onrustigheid",
+                                            "code": "",
+                                            "isActivated": true,
+                                            "childType": "integer",
+                                            "mode": "int",
+                                            "description": "{\n  \"_\": \"Som (vi²) / N - ( som (vi) / N )²\\r\\n                                                    (voertuigen uit alle klasses inbegrepen)\\r\\n                                                    (vi) = snelheid voertuig i\\r\\n                                                    N = totaal aantal voertuigen\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"nl\"\n  }\n}\n\n{\n  \"_\": \"Sum (vi²) / N - ( sum (vi) / N )²\\r\\n                                                    (including all vehicles from all classes)\\r\\n                                                    (vi) = speed of vehicle i\\r\\n                                                    N = total vehicle count\\r\\n                                                \",\n  \"$\": {\n    \"xml:lang\": \"en\"\n  }\n}",
+                                            "primaryKey": false,
+                                            "required": true,
+                                            "exclusiveMinimum": false,
+                                            "exclusiveMaximum": false,
+                                            "GUID": "f1084272-7f59-11ec-8b71-fd875b20c5ff",
+                                            "type": "numeric"
+                                        }
+                                    ],
+                                    "GUID": "f1081b62-7f59-11ec-8b71-fd875b20c5ff",
+                                    "type": "document"
+                                }
+                            ],
+                            "GUID": "f1086980-7f59-11ec-8b71-fd875b20c5ff",
+                            "type": "document",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "GUID": "f106e2e1-7f59-11ec-8b71-fd875b20c5ff",
+                    "type": "array"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f1061f90-7f59-11ec-8b71-fd875b20c5ff"
+            },
+            "GUID": "f105f880-7f59-11ec-8b71-fd875b20c5ff",
+            "type": "object",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "views": [],
+    "buckets": [
+        {
+            "name": "awv.tf_msm.input",
+            "isActivated": true,
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "GUID": "f10a6550-7f59-11ec-8b71-fd875b20c5ff",
+            "type": "bucket",
+            "collectionIds": [
+                "f105f880-7f59-11ec-8b71-fd875b20c5ff"
+            ],
+            "show": true
+        }
+    ],
+    "relationships": [],
+    "pluginInformation": {
+        "pluginName": "Polyglot",
+        "pluginVersion": "0.0.1",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "appTarget": "Polyglot",
+    "lastModifTS": "2022-01-27T10:16:28.830Z",
+    "persistenceSchemaVersion": "5",
+    "isCreatedByPlugin": true,
+    "applicationInformation": {
+        "version": "5.4.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "f105f880-7f59-11ec-8b71-fd875b20c5ff",
+                        "x": 90,
+                        "y": 90,
+                        "width": 462,
+                        "height": 461,
+                        "color": {}
+                    }
+                ],
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "f10a6550-7f59-11ec-8b71-fd875b20c5ff"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
